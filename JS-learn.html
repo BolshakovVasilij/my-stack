@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">д
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="message" style="font-size: 172px;"></p>
+  <script>
+    document.getElementById('message').innerText='Hello World!';
+    //window.alert ('Hello World!');
+    console.log('Hello World!');
+    const firstName = 'Mike';
+    const valueOfPi = 3.142;
+    let isValid = true;
+    let jsObject = console;
+    let jsMethod = console.log;
+    let jsSymbol = Symbol();
+    let emptyVariable = null;
+    let unusedVariable;
+    console.log('firstName:' + typeof firstName);
+    console.log('valueOfPi:' + typeof valueOfPi);
+    console.log('isValid:' + typeof isValid);
+    console.log('jsObject:' + typeof jsObject);
+    console.log('jsMethod:' + typeof JsMethod);
+    console.log('jsSymbol:' + typeof jsSymbol);
+    console.log('emptyVariable:' + typeof emptyVariable);
+    console.log('unusedVariable:' + typeof unusedVariable);
+    function square(arg) {
+      return arg*arg;
+    }
+    function add(argOne, argTwo=10) {
+      return argOne + argTwo;
+    }
+    function squareAdd(arg) {
+      let result = square(arg);
+      return result + add(arg);
+    }
+    console.log(('8 * 8:') + square(8));
+    console.log(('8+20:') + add(8,20));
+    console.log(('8+10:') + add(8));
+    console.log('(8*8)+(8+10):' + squareAdd(8));
+  </script>
+</body>
+</html>
