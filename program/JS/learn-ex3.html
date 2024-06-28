@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 3.1 Выбор.Поиск блюда. Проверка наличия блюда в меню -->
+      <!--<script>
+      let n = prompt();//ввод названия блюда
+      switch(n){
+        case "Тар-тар из говядины с битыми огурцами":
+          console.log("Заказ добавлен");
+          break;
+        case "Мясные деликатесы":
+          console.log("Заказ добавлен");
+          break;
+        case "Цезарь с цыпленком":
+          console.log("Заказ добавлен");
+          break;
+        case "Спагетти Карбонара":
+          console.log("Заказ добавлен");
+          break;
+        case "Сырная тарелка":
+          console.log("Заказ добавлен");
+          break;
+        default:
+          console.log ("Нет такого блюда в меню");
+          break;
+        }
+      </script>-->
+      
+      <!-- 3.3 Функции. Присваивание внешней переменной суммы чисел -->
+      <!--<script>
+        function sum (a,b){
+          res = a + b;
+        }
+      </script>-->
+      <!-- 3.4 Функции. Возврат среднего арифметического, округленного до целого -->
+      <!--<script>
+        function avg (arr){
+          return  Math.round(arr.reduce((a,b) => a+b,0)/arr.length); //используем reduce, чтобы вычислить сумму элемнетов массива, затем делим на количество элементов (длину массива) и округляем с помощью математической функции встроенной
+        }
+      </script>-->
+      <!-- 3.5 Функции. Возврат всех делителей числа в виде массива -->
+      <!--<script>
+        let a = parseInt(prompt());
+        function delimiters(num){
+          let arr=[];
+          for (let i=0;i<=num;i++) {
+            (num%i===0) ? arr.push(i):null;
+          }
+          return arr
+        }
+        console.log(delimiters(a));
+      </script>-->
+<!-- 3.6 Функции. Возврат суммы чисел из интервала -->
+<!--<script>
+    function summ(a, b){
+    let sum = 0;
+    for (i=a;i<=b;i++){
+        sum+=i;
+    }
+    return sum;
+  }
+</script>-->
+<!-- 3.7 Функции. Создать и вывести массив из чисел с противоположным знаком -->
+  <script>
+    let input = prompt().split(" ").map(Number);
+    let reversarr = input.map((item) => -item);
+    console.log(reversarr);
+      //console.log(prompt().split(" ").map(el => +el * -1)) однострочник
+      //const func = (a) => a.map(i => -i);
+      //console.log(func(prompt().split(' ')))
+  </script> 
+
+</body>
+</html>
